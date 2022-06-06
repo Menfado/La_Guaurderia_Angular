@@ -1,0 +1,15 @@
+<header>
+    <nav>
+        <ul [ngClass]="{'light': !isDark, 'dark': isDark }">
+            <li *ngFor="let navElement of navigatorInfo">
+                <a href="{{navElement.link}}">{{navElement.content}}</a>
+
+            </li>
+            <li>
+                <button (click)="changeTheme()">{{theme}}</button>
+            </li>
+        </ul>
+    </nav>
+
+
+</header>

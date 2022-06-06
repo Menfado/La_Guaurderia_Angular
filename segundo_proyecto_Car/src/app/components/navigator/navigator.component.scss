@@ -1,0 +1,38 @@
+nav {
+    border-bottom: 4px solid black;
+    & ul {
+      height: 10vh;
+      color:darkkhaki ;
+      color:beige;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      transition: all 0.5s;
+  
+      & a {
+        text-transform: uppercase;
+        transition: all 0.5s;
+  
+        &:hover {
+          color: black;
+        }
+      }
+  
+      & button {
+        padding: 0;
+        border: none;
+        font: inherit;
+        color: inherit;
+        background-color: transparent;
+        cursor: pointer;
+      }
+    }
+  }
+  
+  .light {
+    background-color:darkkhaki;
+  }
+  
+  .dark {
+    background-color: black;
+  }

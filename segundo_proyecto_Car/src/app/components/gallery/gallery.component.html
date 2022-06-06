@@ -1,0 +1,16 @@
+<section class ="gallery">
+    <h2>{{galleryInfo.title}}</h2>
+    <article>
+        <ul>
+            <li *ngFor = "let dog of galleryInfo.dogs">
+                <figure>
+                    <h3>{{dog.name}}</h3>
+                    <p> Location: {{dog.location}}</p>
+                    <p> Age: {{dog.age}}</p>
+                    <p> Size: {{dog.size}}</p>
+                    <img src ="{{dog.image.src}}" alt = "{{dog.image.alt}}">
+                </figure>
+            </li>
+        </ul>
+    </article>
+</section>
